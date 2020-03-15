@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 
 function mapDispatchToProps(dispatch) {
     return {
-        onClick:function(size) { dispatch({type:'INCREMENT', size:size}) }
+        onInClick:function(_mode) { dispatch({type:_mode.type, size:_mode.size}) },
+        onDeClick:function(_mode) { dispatch({type:_mode.type, size:_mode.size}) }
     }
 }
 

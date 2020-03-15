@@ -8,7 +8,7 @@ function mapReduxStateToReactProps(state) {
     }
 }
 
-/* TB-BR connect()함수를 실행하면 리턴값이 함수로 오는데 여기서 다시 함수를 실행, prop 자동 전송 등 */
+/* TO-BE connect()함수를 실행하면 리턴값이 함수로 오는데 여기서 다시 함수를 실행, prop 자동 전송 등 */
 export default connect(mapReduxStateToReactProps)(DisplayNumber);
 
 /* AS-IS
